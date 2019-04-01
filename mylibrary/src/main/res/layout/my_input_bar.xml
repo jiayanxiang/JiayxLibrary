@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_bar_lt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_tab_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/face_switch_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:clickable="true"
+        android:padding="6dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_edit_emoticon_24dp"
+        android:tint="#65000000" />
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/edit_bg_stroke"
+        android:hint="@string/input_comment"
+        android:maxLength="50"
+        android:inputType="textMultiLine"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="4"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+
+
+    <ImageView
+        android:id="@+id/send_btn_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="2dp"
+        android:clickable="true"
+        android:layout_gravity="center"
+        android:padding="6dp"
+        android:src="@drawable/btn_post" />
+</LinearLayout>

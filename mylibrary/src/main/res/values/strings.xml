@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">MyLibrary</string>
+    <string name="cancle">取消</string>
+    <string name="affirm">确认</string>
+    <string name="update">更新</string>
+    <string name="hint">提示</string>
+    <string name="lfrecyclerview_header_hint_normal">下拉刷新</string>
+    <string name="lfrecyclerview_header_hint_ready">松开刷新数据</string>
+    <string name="lfrecyclerview_header_hint_loading">正在加载...</string>
+    <string name="lfrecyclerview_header_last_time">上次更新时间：</string>
+    <!--上拉查看更多-->
+    <string name="lfrecyclerview_footer_hint_normal">加载完成</string>
+    <string name="lfrecyclerview_footer_hint_ready">松开载入更多</string>
+    <string name="lfrecyclerview_header_hint_success">刷新成功</string>
+    <string name="lfrecyclerview_header_hint_failt">刷新失败</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <string name="input_comment">输入评论</string>
+
+
+    <item name="tag_key_data" type="id"/>
+    <item name="tag_key_position" type="id"/>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="please_enter_search_content" tools:ignore="ExtraTranslation">请输入搜索内容!</string>
+    <string name="information_tips">信息提示</string>
+
+</resources>

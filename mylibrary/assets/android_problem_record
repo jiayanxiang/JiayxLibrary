@@ -1,0 +1,10 @@
+1.build.gradle编译问题：
+  compile 'com.android.support:appcompat-v7:27.+'
+  有时候在编译的时候这一行会报错：是因为你的编译版本不是最新的，可以从新下载，也可以自适应
+  自适应的方法：compile 'com.android.support:appcompat-v7:+'
+2.popupWindow显示问题:
+  * 在android7.0上，如果不主动约束PopuWindow的大小，
+  * 比如，设置布局大小为 MATCH_PARENT,那么PopuWindow会变得尽可能大，
+  * 以至于 view下方无空间完全显示PopuWindow，而且view又无法向上滚动，
+  * 此时PopuWindow会主动上移位置，直到可以显示完全。
+  * 解决办法：主动约束PopuWindow的内容大小，重写showAsDropDown方法：

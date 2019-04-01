@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ToolBarStyle">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/status_bar_color</item>
+    </style>
+
+    <style name="ToolBarStyle.text">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        <!-- Customize your theme here.Theme.AppCompat.Light.DarkActionBar -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyToast" parent="Base.Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_enter</item>
+    </style>
+</resources>

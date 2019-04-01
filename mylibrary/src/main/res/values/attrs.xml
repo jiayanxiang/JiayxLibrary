@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="labels_view">
+        <attr name="selectType" format="enum">
+            <enum name="NONE" value="1" />
+            <enum name="SINGLE" value="2" />
+            <enum name="SINGLE_IRREVOCABLY" value="3" />
+            <enum name="MULTI" value="4" />
+            <enum name="SINGLE_LINE" value="5" />
+        </attr>
+        <attr name="maxSelect" format="integer" />
+        <attr name="maxLines" format="integer" />
+        <attr name="labelTextColor" format="reference|color" />
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="labelTextPaddingLeft" format="dimension" />
+        <attr name="labelTextPaddingTop" format="dimension" />
+        <attr name="labelTextPaddingRight" format="dimension" />
+        <attr name="labelTextPaddingBottom" format="dimension" />
+        <attr name="lineMargin" format="dimension" />
+        <attr name="wordMargin" format="dimension" />
+        <attr name="labelBackground" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="XTabLayout">
+        <attr name="xTabIndicatorHeight" format="dimension"/>
+        <attr name="xTabIndicatorWidth" format="dimension"/>
+        <attr name="xTabIndicatorColor" format="color"/>
+        <attr name="xTabPadding" format="dimension"/>
+        <attr name="xTabPaddingStart" format="dimension"/>
+        <attr name="xTabPaddingTop" format="dimension"/>
+        <attr name="xTabPaddingEnd" format="dimension"/>
+        <attr name="xTabPaddingBottom" format="dimension"/>
+        <attr name="xTabTextAppearance" format="reference"/>
+        <attr name="xTabTextColor" format="color"/>
+        <attr name="xTabSelectedTextColor" format="color"/>
+        <attr name="xTabMinWidth" format="dimension"/>
+        <attr name="xTabMaxWidth" format="dimension"/>
+        <attr name="xTabBackgroundColor" format="reference|color"/>
+        <attr name="xTabSelectedBackgroundColor" format="reference|color"/>
+        <attr name="xTabContentStart" format="dimension"/>
+        <attr name="xTabMode">
+            <enum name="scrollable" value="0x00000000" />
+            <enum name="fixed" value="0x00000001" />
+        </attr>
+        <attr name="xTabGravity" format="integer"/>
+
+        <attr name="xTabTextSize" format="dimension"/>
+        <attr name="xTabTextBold" format="boolean"/>
+        <attr name="xTabSelectedTextSize" format="dimension"/>
+        <attr name="xTabTextSelectedBold" format="boolean"/>
+        <attr name="xTabDisplayNum" format="integer"/>
+        <attr name="xTabTextAllCaps" format="boolean"/>
+
+
+        <attr name="xTabDividerHeight" format="dimension"/>
+        <attr name="xTabDividerWidth" format="dimension"/>
+        <attr name="xTabDividerWidthWidthText" format="boolean"/>
+        <attr name="xTabDividerColor" format="color"/>
+        <attr name="xTabDividerGravity">
+            <enum name="top" value="0x00000000" />
+            <enum name="center" value="0x00000001" />
+            <enum name="bottom" value="0x00000002" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="showLines" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="rectangle_background_default">
+        <attr name="selectDefaultType" format="enum">
+            <enum name="DEFAULT" value="1" />
+            <enum name="DEFAULT_2x3" value="2" />
+            <enum name="DEFAULT_2x4" value="3" />
+            <enum name="DEFAULT_3x2" value="4" />
+            <enum name="DEFAULT_4x2" value="5" />
+            <enum name="DEFAULT_2x3_ROUND" value="6" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="nodeProgress">
+        <!--节点默认颜色-->
+        <attr name="node_color" format="color" />
+        <!--节点进度颜色-->
+        <attr name="node_progresscolor" format="color" />
+        <!--进度条默认颜色-->
+        <attr name="node_bar" format="color" />
+        <!--进度条默认颜色-->
+        <attr name="node_progress_bar" format="color" />
+        <!--文字提示颜色-->
+        <attr name="node_tip" format="color" />
+        <!--进度提示颜色-->
+        <attr name="node_progress_tip" format="color" />
+        <!-- 几点个数-->
+        <attr name="node_num" format="integer" />
+        <!-- 当前进度-->
+        <attr name="node_current" format="integer" />
+        <!--节点半径-->
+        <attr name="node_radio" format="dimension" />
+
+        <!-- 节点背景图-->
+        <attr name="node_bg" format="reference" />
+        <attr name="node_progress_bg" format="reference" />
+
+    </declare-styleable>
+</resources>
