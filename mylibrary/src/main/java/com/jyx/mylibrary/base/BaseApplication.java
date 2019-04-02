@@ -5,11 +5,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import com.jyx.mylibrary.utils.JsonUtil;
 import com.jyx.mylibrary.utils.ScreenUtils;
 import com.jyx.mylibrary.utils.ToastUtils;
-import com.umeng.analytics.MobclickAgent;
-import com.umeng.commonsdk.UMConfigure;
 import com.wanjian.cockroach.Cockroach;
 import com.zhy.http.okhttp.log.LoggerInterceptor;
 
@@ -40,7 +37,6 @@ public class BaseApplication extends Application {
 
         ToastUtils.init(this);
         ScreenUtils.init(this);
-        initUMConfigure();
         initCockroach();
     }
 
@@ -85,7 +81,6 @@ public class BaseApplication extends Application {
             @Override
             public void handlerException(final Thread thread, final Throwable throwable) {
                 Log.e("Cockroach", thread + "\n" + throwable.toString());
-                MobclickAgent.reportError(getInstance(), "custom error :" + throwable.toString());
                 new Handler(Looper.getMainLooper()).post(new Runnable() {
                     @Override
                     public void run() {
@@ -101,34 +96,6 @@ public class BaseApplication extends Application {
                 });
             }
         });
-    }
-
-    /**
-     * 初始化友盟统计
-     */
-    public void initUMConfigure() {
-
-        /**
-         * 设置组件化的Log开关
-         * 参数: boolean 默认为false，如需查看LOG设置为true
-         */
-        UMConfigure.setLogEnabled(true);
-        MobclickAgent.setCatchUncaughtExceptions(true);
-        MobclickAgent.setScenarioType(getApplicationContext()
-                , MobclickAgent.EScenarioType.E_UM_NORMAL);
-
-
-        /**
-         * 初始化common库
-         * 参数1:上下文，不能为空
-         * 参数2:【友盟+】 AppKey
-         * 参数3:【友盟+】 Channel
-         * 参数4:设备类型，UMConfigure.DEVICE_TYPE_PHONE为手机、UMConfigure.DEVICE_TYPE_BOX为盒子，默认为手机
-         * 参数5:Push推送业务的secret
-         */
-        UMConfigure.init(this, "5c9c3ae20cafb2f2c6000d41", "weina", UMConfigure.DEVICE_TYPE_PHONE, "");
-
-        Log.e("um", UMConfigure.isDebugLog() + "/" + JsonUtil.objectToJson(UMConfigure.umDebugLog));
     }
 
 }
