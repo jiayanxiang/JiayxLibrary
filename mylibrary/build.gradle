@@ -18,9 +18,10 @@ android {
         release{ }
     }
     dataBinding {
-        enabled = true
+        enabled = false
     }
 }
+
 
 dependencies {
     api fileTree(include: ['*.jar'], dir: 'libs')
