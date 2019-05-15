@@ -6,8 +6,6 @@
     android:layout_height="@dimen/toolbar_view_height"
     android:background="@android:color/white"
     android:orientation="vertical"
-    android:clipToPadding="true"
-    android:fitsSystemWindows="true"
     app:elevation="0dp">
 
     <Toolbar
