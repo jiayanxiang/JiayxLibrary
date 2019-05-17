@@ -196,6 +196,20 @@ public abstract class BaseActivity extends Activity {
     }
 
     /**
+     * 返回箭头是否显示
+     *
+     * @param isShow
+     */
+    public void setToolbarBack(Boolean isShow) {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            if (!isShow) {
+                toolbar.setNavigationIcon(null);
+            }
+        }
+    }
+
+    /**
      * 设置toolbar背景色
      *
      * @param toolbar         the toolbar

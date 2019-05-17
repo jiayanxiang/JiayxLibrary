@@ -193,6 +193,20 @@ public abstract class BaseFragment extends Fragment {
     }
 
     /**
+     * 返回箭头是否显示
+     *
+     * @param isShow
+     */
+    public void setToolbarBack(Boolean isShow) {
+        Toolbar toolbar = (Toolbar) rootView.findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            if (!isShow) {
+                toolbar.setNavigationIcon(null);
+            }
+        }
+    }
+
+    /**
      * 搜索是否显示，默认不显示
      *
      * @param isShow the is show

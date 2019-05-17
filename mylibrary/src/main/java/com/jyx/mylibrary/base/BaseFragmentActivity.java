@@ -180,6 +180,7 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
                 @Override
                 public void onClick(View v) {
                     getSelfActivity().finish();
+                    overridePendingTransition(R.anim.right_in, R.anim.right_out);
                 }
             });
         }
@@ -212,6 +213,20 @@ public abstract class BaseFragmentActivity extends FragmentActivity {
                     });
                 }
             });
+        }
+    }
+
+    /**
+     * 返回箭头是否显示
+     *
+     * @param isShow
+     */
+    public void setToolbarBack(Boolean isShow) {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar != null) {
+            if (!isShow) {
+                toolbar.setNavigationIcon(null);
+            }
         }
     }
 
